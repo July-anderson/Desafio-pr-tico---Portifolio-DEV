@@ -58,7 +58,10 @@
 }
 
 #my-work {
-  background-color: var(--gray-600);
+  background: var(--gray-600);
+  height: 480px;
+  padding-top: 88px;
+  padding-bottom: 120px;
 }
 #devices {
   display: grid;
@@ -67,12 +70,57 @@
   gap: 24px;
 }
 
+#footer {
+  background: no-repeat center/cover url(/assets/images/Background_Contacts.png);
+  padding-top: 120px;
+  padding-bottom: 200px;
+  height: 100%;
+
+  h1 {
+    margin-bottom: 8px;
+  }
+
+  p {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+}
+
+#socialmedia {
+  display: grid;
+  justify-items: center;
+  gap: 16px;
+
+  :hover {
+    border: 1.5px solid var(--blue);
+  }
+
+  :hover > img {
+    pointer-events: none;
+
+    color: var(--blue);
+  }
+
+  :hover > p {
+    pointer-events: none;
+  }
+
+  :hover > span {
+    pointer-events: none;
+  }
+}
+
 .cont {
-  height: 185px;
+  height: 155px;
   width: 280px;
   border: 2px solid var(--gray-500);
   border-radius: 12px;
   padding: 20px;
+  margin-bottom: 120px;
+  h1 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+  }
 }
 
 .span {
@@ -142,4 +190,31 @@
 .text-sm-mp {
   font: var(--text-sm-mp);
   text-align: left;
+}
+
+.text-md-mp {
+  font: var(--text-md-mp);
+}
+
+.social {
+  display: flex;
+  width: 400px;
+  height: 68px;
+  background-color: var(--gray-400);
+  border-radius: 8px;
+  padding: 20px;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+
+  p {
+    width: 300px;
+    margin-top: 50px;
+    text-align-last: left;
+  }
+}
+.img {
+  width: 28px;
+  height: 28px;
+  color: blue;
 }
